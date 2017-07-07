@@ -1,0 +1,36 @@
+{
+  "title": "Person",
+  "type": "object",
+  "schemaName": "test",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": ["firstName", "lastName"],
+  "links": [
+    {
+      "method": "GET",
+      "href":"/test"
+    },
+    {
+      "method": "POST",
+      "href":"/test"
+    },
+    {
+      "method": "PUT",
+      "href":"/test"
+    },
+    {
+      "method": "DELETE",
+      "href":"/test"
+    }
+  ]
+}
